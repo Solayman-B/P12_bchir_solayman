@@ -28,6 +28,8 @@ class Client(models.Model):
 	date_updated = models.DateField(auto_now=True, verbose_name="Date de modification")
 	sales_contact = models.ForeignKey(TeamUser, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Vendeur(se)")
 
+	def __str__(self):
+		return f'{self.last_name} {self.first_name}'
 
 class Event(models.Model):
 	CREATED = "Créé"
