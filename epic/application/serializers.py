@@ -1,10 +1,10 @@
 from rest_framework.serializers import ModelSerializer
-from .models import User, Client, Event, Contract
+from .models import TeamUser, Client, Event, Contract
 
 class UserSerializer(ModelSerializer):
 
 	class Meta:
-		model = User
+		model = TeamUser
 		fields = ['first_name', 'last_name', 'email', 'phone', 'mobile', 'team',]
 
 

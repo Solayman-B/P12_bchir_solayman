@@ -16,12 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
-from application.views import UserViewset, ClientViewset, EventViewset, ContractViewset
+from application.views import ClientViewset, EventViewset, ContractViewset
 
 
 router = routers.SimpleRouter()
 
-router.register('user', UserViewset, basename='user')
 router.register('client', ClientViewset, basename='client')
 router.register('event', EventViewset, basename='event')
 router.register('contract', ContractViewset, basename='contract')

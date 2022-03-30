@@ -1,17 +1,12 @@
 from rest_framework.viewsets import ModelViewSet
-from .models import User, Client, Event, Contract
-from .serializers import UserSerializer, ClientSerializer, EventSerializer, ContractSerializer
-
-
-class UserViewset(ModelViewSet):
-	serializer_class = UserSerializer
-
-	def get_queryset(self):
-		return User.objects.all()
+from .permissions import IsSupportAuthenticated, IsSalesAuthenticated, IsManagementAuthenticated
+from .models import Client, Event, Contract
+from .serializers import ClientSerializer, EventSerializer, ContractSerializer
 
 
 class ClientViewset(ModelViewSet):
 	serializer_class = ClientSerializer
+	permission_classes = [IsSupportAuthenticated | IsSalesAuthenticated | IsManagementAuthenticated]
 
 	def get_queryset(self):
 		return Client.objects.all()
@@ -19,6 +14,7 @@ class ClientViewset(ModelViewSet):
 
 class EventViewset(ModelViewSet):
 	serializer_class = EventSerializer
+	permission_classes = [IsSupportAuthenticated | IsSalesAuthenticated | IsManagementAuthenticated]
 
 	def get_queryset(self):
 		return Event.objects.all()
@@ -26,6 +22,7 @@ class EventViewset(ModelViewSet):
 
 class ContractViewset(ModelViewSet):
 	serializer_class = ContractSerializer
+	permission_classes = [IsSupportAuthenticated | IsSalesAuthenticated | IsManagementAuthenticated]
 
 	def get_queryset(self):
 		return Contract.objects.all()

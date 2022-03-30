@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 
 
-class User(AbstractUser):
+class TeamUser(AbstractUser):
 	SUPPORT = 'Support'
 	SALES = 'Ventes'
 	MANAGEMENT = 'Gestion'
@@ -12,26 +12,21 @@ class User(AbstractUser):
 					(MANAGEMENT, 'Gestion'),
 					)
 
-	phone = models.CharField(max_length=20, blank=True, null=True)
-	mobile = models.CharField(max_length=20, blank=True, null=True)
-	team = models.CharField(max_length=20, choices=TEAM_CHOICES)
+	phone = models.CharField(max_length=20, blank=True, null=True, verbose_name="Téléphone")
+	mobile = models.CharField(max_length=20, blank=True, null=True, verbose_name="Portable")
+	team = models.CharField(max_length=20, choices=TEAM_CHOICES, verbose_name="Pôle")
 
-	def __str__(self):
-		return f'{self.first_name} {self.last_name} team {self.team}'
 
 class Client(models.Model):
-	first_name = models.CharField(max_length=25)
-	last_name = models.CharField(max_length=25)
-	email = models.EmailField(max_length=100, blank=True, null=True)
-	phone = models.CharField(max_length=20, blank=True, null=True)
-	mobile = models.CharField(max_length=20, blank=True, null=True)
-	company_name = models.CharField(max_length=250)
-	date_created = models.DateField(auto_now_add=True)
-	date_updated = models.DateField(auto_now=True)
-	sales_contact = models.ForeignKey(User, on_delete=models.SET_NULL, blank=True, null=True)
-
-	def __str__(self):
-		return f'{self.first_name} {self.last_name} {self.company_name}'
+	first_name = models.CharField(max_length=25, verbose_name="Prénom")
+	last_name = models.CharField(max_length=25, verbose_name="Nom")
+	email = models.EmailField(max_length=100, blank=True, null=True, verbose_name="Courriel")
+	phone = models.CharField(max_length=20, blank=True, null=True, verbose_name="Téléphone")
+	mobile = models.CharField(max_length=20, blank=True, null=True, verbose_name="Portable")
+	company_name = models.CharField(max_length=250, verbose_name="Entreprise")
+	date_created = models.DateField(auto_now_add=True, verbose_name="Date d'inscription")
+	date_updated = models.DateField(auto_now=True, verbose_name="Date de modification")
+	sales_contact = models.ForeignKey(TeamUser, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Vendeur(se)")
 
 
 class Event(models.Model):
@@ -44,27 +39,22 @@ class Event(models.Model):
 					 (FINISHED, "Terminé"),
 					 )
 
-	client = models.ForeignKey(Client, on_delete=models.CASCADE)
-	date_created = models.DateField(auto_now_add=True)
-	date_updated = models.DateField(auto_now_add=True)
-	support_contact = models.ForeignKey(User, on_delete=models.SET_NULL, blank=True, null=True)
-	event_status = models.CharField(max_length=20, choices=EVENT_CHOICES)
-	attendees = models.IntegerField()
-	event_date = models.DateField()
-	notes = models.TextField(blank=True, null=True)
+	client = models.ForeignKey(Client, on_delete=models.CASCADE, verbose_name="Client")
+	date_created = models.DateField(auto_now_add=True, verbose_name="Date de création")
+	date_updated = models.DateField(auto_now_add=True, verbose_name="Date de modification")
+	support_contact = models.ForeignKey(TeamUser, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Responsable")
+	event_status = models.CharField(max_length=20, choices=EVENT_CHOICES, verbose_name="Statut de l'évènement")
+	attendees = models.IntegerField(verbose_name="Nombre de participants")
+	event_date = models.DateField(verbose_name="Date de l'évènement")
+	notes = models.TextField(blank=True, null=True, verbose_name="Notes")
 
-	def __str__(self):
-		return f'{self.client} {self.event_status}'
 
 
 class Contract(models.Model):
-	sales_contact = models.ForeignKey(User, on_delete=models.SET_NULL, blank=True, null=True)
-	client = models.ForeignKey(Client, on_delete=models.CASCADE)
-	date_created = models.DateField(auto_now_add=True)
-	date_updated = models.DateField(auto_now=True)
-	status = models.BooleanField(default=False)
-	amount = models.FloatField()
-	payement_due = models.DateField()
-
-	def __str__(self):
-		return f'{self.client} {self.status}'
+	sales_contact = models.ForeignKey(TeamUser, on_delete=models.SET_NULL, blank=True, null=True, verbose_name="Vendeur(se)")
+	client = models.ForeignKey(Client, on_delete=models.CASCADE, verbose_name="Client")
+	date_created = models.DateField(auto_now_add=True, verbose_name="Date de création")
+	date_updated = models.DateField(auto_now=True, verbose_name="Date de modification")
+	status = models.BooleanField(default=False, verbose_name="Contrat signé")
+	amount = models.FloatField(verbose_name="Montant €")
+	payement_due = models.DateField(verbose_name="Date d'échéance du paiement")
