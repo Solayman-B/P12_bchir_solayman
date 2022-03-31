@@ -140,3 +140,28 @@ REST_FRAMEWORK = {
         'rest_framework.filters.SearchFilter',
     ]
 }
+
+LOGGING = {
+    'version': 1,  # the dictConfig format version
+    'disable_existing_loggers': False,  # retain the default loggers
+    'formatters': {
+            'verbose': {
+                'format': '{levelname} {asctime} {module} {process:d} {thread:d} {message}',
+                'style': '{',
+            },
+        },
+    'handlers': {
+        'file': {
+            'class': 'logging.FileHandler',
+            'filename': 'errors.log',
+            'level': 'WARNING',
+        },
+    },
+    'loggers': {
+            'django': {
+                'handlers': ['file'],
+                'level': 'WARNING',
+                'propagate': True,
+            },
+        },
+}
