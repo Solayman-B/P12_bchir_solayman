@@ -1,6 +1,8 @@
 from rest_framework import permissions
 from rest_framework.permissions import BasePermission
-from .models import TeamUser, Event
+from Account.models import TeamUser
+from Event.models import Event
+
 
 class IsSupportAuthenticated(BasePermission):
 
@@ -9,7 +11,7 @@ class IsSupportAuthenticated(BasePermission):
 		return request.user in support_user.all()
 
 	def has_object_permission(self, request, view, obj):
-		if type (obj) is Event:
+		if type(obj) is Event:
 			if request.user.id == obj.support_contact.id:
 				return True
 			else:
@@ -25,7 +27,7 @@ class IsSalesAuthenticated(BasePermission):
 		return request.user in support_user.all()
 
 	def has_object_permission(self, request, view, obj):
-		if type (obj) is Event:
+		if type(obj) is Event:
 			if request.user.id == obj.client.sales_contact.id:
 				return True
 			else:
@@ -37,12 +39,10 @@ class IsSalesAuthenticated(BasePermission):
 				return request.method in permissions.SAFE_METHODS
 
 
-
 class IsManagementAuthenticated(BasePermission):
 
 	def has_permission(self, request, view):
-		management_user = TeamUser.objects.filter(team="Gestion")
-		return request.user in management_user
+		return request.user.team == "Gestion"  # faire pareil pour tous et mettre Gestion en anglais
 
 	def has_object_permission(self, request, view, obj):
 		management_user = TeamUser.objects.filter(team="Gestion")
