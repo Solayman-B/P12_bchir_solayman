@@ -2,15 +2,29 @@ from rest_framework.serializers import ModelSerializer
 from .models import TeamUser, Client
 
 
-class UserSerializer(ModelSerializer):
+class TeamUserListSerializer(ModelSerializer):
 
 	class Meta:
 		model = TeamUser
-		fields = ['first_name', 'last_name', 'email', 'phone', 'mobile', 'team',]
+		fields = ['id', 'first_name', 'last_name','team']
 
 
-class ClientSerializer(ModelSerializer):
+class TeamUserDetailSerializer(ModelSerializer):
+
+	class Meta:
+		model = TeamUser
+		fields = ['id', 'first_name', 'last_name', 'email', 'phone', 'mobile', 'team']
+
+
+class ClientListSerializer(ModelSerializer):
 
 	class Meta:
 		model = Client
-		fields = ['first_name', 'last_name', 'email', 'phone', 'mobile', 'company_name', 'date_created', 'date_updated', 'sales_contact',]
+		fields = ['id', 'first_name', 'last_name', 'company_name','sales_contact']
+
+
+class ClientDetailSerializer(ModelSerializer):
+
+	class Meta:
+		model = Client
+		fields = ['id', 'first_name', 'last_name', 'email', 'phone', 'mobile', 'company_name', 'date_created', 'date_updated', 'sales_contact']

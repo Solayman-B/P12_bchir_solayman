@@ -11,3 +11,1392 @@ Not Found: /
 "GET / HTTP/1.1" 404 2270
 Not Found: /
 "GET / HTTP/1.1" 404 2270
+Not Found: /apple-touch-icon-precomposed.png
+"GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 2384
+Not Found: /apple-touch-icon.png
+"GET /apple-touch-icon.png HTTP/1.1" 404 2348
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2321
+Not Found: /
+"GET / HTTP/1.1" 404 2270
+Not Found: /
+"GET / HTTP/1.1" 404 2270
+Not Found: /
+"GET / HTTP/1.1" 404 2270
+Not Found: /accounts/profile/
+"GET /accounts/profile/ HTTP/1.1" 404 2339
+Not Found: /
+"GET / HTTP/1.1" 404 2270
+Not Found: /api-auth/
+"GET /api-auth/ HTTP/1.1" 404 2560
+Not Found: /api/
+"GET /api/ HTTP/1.1" 404 3349
+Forbidden: /api/client/
+"GET /api/client/ HTTP/1.1" 403 5338
+Forbidden (CSRF token from POST incorrect.): /admin/login/
+"POST /admin/login/?next=/admin/ HTTP/1.1" 403 2541
+Forbidden (CSRF token from POST incorrect.): /admin/login/
+"POST /admin/login/?next=/admin/ HTTP/1.1" 403 2541
+Internal Server Error: /api/client/
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/rest_framework/permissions.py", line 76, in has_permission
+    self.op2.has_permission(request, view)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/epic/Epic/permissions.py", line 45, in has_permission
+    return request.user.team == "Gestion"  # faire pareil pour tous et mettre Gestion en anglais
+AttributeError: 'AnonymousUser' object has no attribute 'team'
+"GET /api/client/ HTTP/1.1" 500 101019
+Not Found: /
+"GET / HTTP/1.1" 404 2270
+Not Found: /client/
+"GET /client/ HTTP/1.1" 404 2309
+Not Found: /
+"GET / HTTP/1.1" 404 2270
+Not Found: /client
+"GET /client HTTP/1.1" 404 2306
+Internal Server Error: /api/client/
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/rest_framework/views.py", line 497, in dispatch
+    self.initial(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/rest_framework/views.py", line 415, in initial
+    self.check_permissions(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/rest_framework/views.py", line 332, in check_permissions
+    if not permission.has_permission(request, self):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/rest_framework/permissions.py", line 75, in has_permission
+    self.op1.has_permission(request, view) or
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/rest_framework/permissions.py", line 75, in has_permission
+    self.op1.has_permission(request, view) or
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/epic/Epic/permissions.py", line 10, in has_permission
+    return request.user.team == "SUPPORT"
+AttributeError: 'AnonymousUser' object has no attribute 'team'
+"GET /api/client/ HTTP/1.1" 500 104060
+Bad Request: /api/token/refresh/
+"POST /api/token/refresh/ HTTP/1.1" 400 44
+Internal Server Error: /admin/Event/event/add/
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column "contract_id" of relation "Event_event" does not exist
+LINE 1: ...e_created", "date_updated", "support_contact_id", "contract_...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1885, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1745, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1797, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1220, in save_model
+    obj.save()
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/base.py", line 806, in save
+    self.save_base(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/base.py", line 857, in save_base
+    updated = self._save_table(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column "contract_id" of relation "Event_event" does not exist
+LINE 1: ...e_created", "date_updated", "support_contact_id", "contract_...
+                                                             ^
+
+"POST /admin/Event/event/add/ HTTP/1.1" 500 185938
+Internal Server Error: /admin/Event/event/add/
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column "contract_id" of relation "Event_event" does not exist
+LINE 1: ...e_created", "date_updated", "support_contact_id", "contract_...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1885, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1745, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1797, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1220, in save_model
+    obj.save()
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/base.py", line 806, in save
+    self.save_base(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/base.py", line 857, in save_base
+    updated = self._save_table(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column "contract_id" of relation "Event_event" does not exist
+LINE 1: ...e_created", "date_updated", "support_contact_id", "contract_...
+                                                             ^
+
+"POST /admin/Event/event/add/ HTTP/1.1" 500 185938
+Internal Server Error: /admin/Event/event/
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column Event_event.contract_id does not exist
+LINE 1: ..._client"."id") INNER JOIN "Contract_contract" ON ("Event_eve...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 2063, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 302, in __len__
+    self._fetch_all()
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column Event_event.contract_id does not exist
+LINE 1: ..._client"."id") INNER JOIN "Contract_contract" ON ("Event_eve...
+                                                             ^
+
+"GET /admin/Event/event/ HTTP/1.1" 500 161911
+Internal Server Error: /admin/Event/event/
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column Event_event.contract_id does not exist
+LINE 1: ..._client"."id") INNER JOIN "Contract_contract" ON ("Event_eve...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 2063, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 302, in __len__
+    self._fetch_all()
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column Event_event.contract_id does not exist
+LINE 1: ..._client"."id") INNER JOIN "Contract_contract" ON ("Event_eve...
+                                                             ^
+
+"GET /admin/Event/event/ HTTP/1.1" 500 161911
+Internal Server Error: /admin/Event/event/
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column Event_event.contract_id does not exist
+LINE 1: ..._client"."id") INNER JOIN "Contract_contract" ON ("Event_eve...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 2063, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 302, in __len__
+    self._fetch_all()
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column Event_event.contract_id does not exist
+LINE 1: ..._client"."id") INNER JOIN "Contract_contract" ON ("Event_eve...
+                                                             ^
+
+"GET /admin/Event/event/ HTTP/1.1" 500 161900
+Internal Server Error: /admin/Event/event/
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column Event_event.contract_id does not exist
+LINE 1: ..._client"."id") INNER JOIN "Contract_contract" ON ("Event_eve...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 2063, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 302, in __len__
+    self._fetch_all()
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column Event_event.contract_id does not exist
+LINE 1: ..._client"."id") INNER JOIN "Contract_contract" ON ("Event_eve...
+                                                             ^
+
+"GET /admin/Event/event/ HTTP/1.1" 500 161911
+Internal Server Error: /admin/Event/event/add/
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column "contract_id" of relation "Event_event" does not exist
+LINE 1: ...e_created", "date_updated", "support_contact_id", "contract_...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1885, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1745, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1797, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1220, in save_model
+    obj.save()
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/base.py", line 806, in save
+    self.save_base(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/base.py", line 857, in save_base
+    updated = self._save_table(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column "contract_id" of relation "Event_event" does not exist
+LINE 1: ...e_created", "date_updated", "support_contact_id", "contract_...
+                                                             ^
+
+"POST /admin/Event/event/add/ HTTP/1.1" 500 185945
+Internal Server Error: /admin/Event/event/add/
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column "contract_id" of relation "Event_event" does not exist
+LINE 1: ...e_created", "date_updated", "support_contact_id", "contract_...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1885, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1745, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1797, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1220, in save_model
+    obj.save()
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/base.py", line 806, in save
+    self.save_base(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/base.py", line 857, in save_base
+    updated = self._save_table(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column "contract_id" of relation "Event_event" does not exist
+LINE 1: ...e_created", "date_updated", "support_contact_id", "contract_...
+                                                             ^
+
+"POST /admin/Event/event/add/ HTTP/1.1" 500 185945
+Internal Server Error: /admin/Event/event/
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column Event_event.contract_id does not exist
+LINE 1: ..._client"."id") INNER JOIN "Contract_contract" ON ("Event_eve...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 2063, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 302, in __len__
+    self._fetch_all()
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column Event_event.contract_id does not exist
+LINE 1: ..._client"."id") INNER JOIN "Contract_contract" ON ("Event_eve...
+                                                             ^
+
+"GET /admin/Event/event/ HTTP/1.1" 500 161900
+Internal Server Error: /admin/Event/event/
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column Event_event.contract_id does not exist
+LINE 1: ..._client"."id") INNER JOIN "Contract_contract" ON ("Event_eve...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 2063, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 302, in __len__
+    self._fetch_all()
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column Event_event.contract_id does not exist
+LINE 1: ..._client"."id") INNER JOIN "Contract_contract" ON ("Event_eve...
+                                                             ^
+
+"GET /admin/Event/event/ HTTP/1.1" 500 161900
+Internal Server Error: /admin/Event/event/
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column Event_event.contract_id does not exist
+LINE 1: ..._client"."id") INNER JOIN "Contract_contract" ON ("Event_eve...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 2063, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 302, in __len__
+    self._fetch_all()
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column Event_event.contract_id does not exist
+LINE 1: ..._client"."id") INNER JOIN "Contract_contract" ON ("Event_eve...
+                                                             ^
+
+"GET /admin/Event/event/ HTTP/1.1" 500 161900
+Internal Server Error: /admin/Event/event/
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedColumn: column Event_event.contract_id does not exist
+LINE 1: ..._client"."id") INNER JOIN "Contract_contract" ON ("Event_eve...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 2063, in changelist_view
+    "selection_note": _("0 of %(cnt)s selected") % {"cnt": len(cl.result_list)},
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 302, in __len__
+    self._fetch_all()
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: column Event_event.contract_id does not exist
+LINE 1: ..._client"."id") INNER JOIN "Contract_contract" ON ("Event_eve...
+                                                             ^
+
+"GET /admin/Event/event/ HTTP/1.1" 500 161900
+Internal Server Error: /admin/Event/event/
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "Event_event" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "Event_event"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1926, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 831, in get_changelist_instance
+    return ChangeList(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/views/main.py", line 123, in __init__
+    self.get_results(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/views/main.py", line 279, in get_results
+    result_count = paginator.count
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/paginator.py", line 96, in count
+    return c()
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 470, in count
+    return self.query.get_count(using=self.db)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 543, in get_count
+    number = obj.get_aggregation(using, ["__count"])["__count"]
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 528, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "Event_event" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "Event_event"
+                                          ^
+
+"GET /admin/Event/event/ HTTP/1.1" 500 168938
+Internal Server Error: /admin/Event/event/
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "Event_event" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "Event_event"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1926, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 831, in get_changelist_instance
+    return ChangeList(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/views/main.py", line 123, in __init__
+    self.get_results(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/views/main.py", line 279, in get_results
+    result_count = paginator.count
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/paginator.py", line 96, in count
+    return c()
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 470, in count
+    return self.query.get_count(using=self.db)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 543, in get_count
+    number = obj.get_aggregation(using, ["__count"])["__count"]
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 528, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "Event_event" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "Event_event"
+                                          ^
+
+"GET /admin/Event/event/ HTTP/1.1" 500 168938
+Internal Server Error: /admin/Event/event/
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "Event_event" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "Event_event"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1926, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 831, in get_changelist_instance
+    return ChangeList(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/views/main.py", line 123, in __init__
+    self.get_results(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/views/main.py", line 279, in get_results
+    result_count = paginator.count
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/paginator.py", line 96, in count
+    return c()
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 470, in count
+    return self.query.get_count(using=self.db)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 543, in get_count
+    number = obj.get_aggregation(using, ["__count"])["__count"]
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 528, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "Event_event" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "Event_event"
+                                          ^
+
+"GET /admin/Event/event/ HTTP/1.1" 500 168938
+Internal Server Error: /admin/Event/event/
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "Event_event" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "Event_event"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1926, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 831, in get_changelist_instance
+    return ChangeList(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/views/main.py", line 123, in __init__
+    self.get_results(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/views/main.py", line 279, in get_results
+    result_count = paginator.count
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/paginator.py", line 96, in count
+    return c()
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 470, in count
+    return self.query.get_count(using=self.db)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 543, in get_count
+    number = obj.get_aggregation(using, ["__count"])["__count"]
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 528, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "Event_event" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "Event_event"
+                                          ^
+
+"GET /admin/Event/event/ HTTP/1.1" 500 168938
+Internal Server Error: /admin/Event/event/
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "Event_event" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "Event_event"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1926, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 831, in get_changelist_instance
+    return ChangeList(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/views/main.py", line 123, in __init__
+    self.get_results(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/views/main.py", line 279, in get_results
+    result_count = paginator.count
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/paginator.py", line 96, in count
+    return c()
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 470, in count
+    return self.query.get_count(using=self.db)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 543, in get_count
+    number = obj.get_aggregation(using, ["__count"])["__count"]
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 528, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "Event_event" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "Event_event"
+                                          ^
+
+"GET /admin/Event/event/ HTTP/1.1" 500 168938
+Internal Server Error: /admin/Event/event/
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "Event_event" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "Event_event"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1926, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 831, in get_changelist_instance
+    return ChangeList(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/views/main.py", line 123, in __init__
+    self.get_results(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/views/main.py", line 279, in get_results
+    result_count = paginator.count
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/paginator.py", line 96, in count
+    return c()
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 470, in count
+    return self.query.get_count(using=self.db)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 543, in get_count
+    number = obj.get_aggregation(using, ["__count"])["__count"]
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 528, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "Event_event" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "Event_event"
+                                          ^
+
+"GET /admin/Event/event/ HTTP/1.1" 500 168772
+Internal Server Error: /admin/Event/event/
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "Event_event" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "Event_event"
+                                          ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1926, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 831, in get_changelist_instance
+    return ChangeList(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/views/main.py", line 123, in __init__
+    self.get_results(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/views/main.py", line 279, in get_results
+    result_count = paginator.count
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/functional.py", line 49, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/paginator.py", line 96, in count
+    return c()
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 470, in count
+    return self.query.get_count(using=self.db)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 543, in get_count
+    number = obj.get_aggregation(using, ["__count"])["__count"]
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/query.py", line 528, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "Event_event" does not exist
+LINE 1: SELECT COUNT(*) AS "__count" FROM "Event_event"
+                                          ^
+
+"GET /admin/Event/event/ HTTP/1.1" 500 168928
+Internal Server Error: /admin/Event/event/add/
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "Event_event" does not exist
+LINE 1: INSERT INTO "Event_event" ("client_id", "date_created", "dat...
+                    ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 683, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1885, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1745, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1797, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/contrib/admin/options.py", line 1220, in save_model
+    obj.save()
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/base.py", line 806, in save
+    self.save_base(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/base.py", line 857, in save_base
+    updated = self._save_table(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/base.py", line 1000, in _save_table
+    results = self._do_insert(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/base.py", line 1041, in _do_insert
+    return manager._insert(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 1434, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1621, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "Event_event" does not exist
+LINE 1: INSERT INTO "Event_event" ("client_id", "date_created", "dat...
+                    ^
+
+"POST /admin/Event/event/add/ HTTP/1.1" 500 185364
+Internal Server Error: /api/event/
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+psycopg2.errors.UndefinedTable: relation "Event_event" does not exist
+LINE 1: ...t_event"."event_date", "Event_event"."notes" FROM "Event_eve...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/rest_framework/serializers.py", line 768, in data
+    ret = super().data
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/rest_framework/serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/rest_framework/serializers.py", line 686, in to_representation
+    return [
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 320, in __iter__
+    self._fetch_all()
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 1507, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/query.py", line 57, in __iter__
+    results = compiler.execute_sql(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/models/sql/compiler.py", line 1361, in execute_sql
+    cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/Users/solayman/Dropbox/Mon Mac (MacBook-Pro-de-Solayman.local)/Documents/OpenClassrooms/P12_solayman_bchir/dev/env/lib/python3.9/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+django.db.utils.ProgrammingError: relation "Event_event" does not exist
+LINE 1: ...t_event"."event_date", "Event_event"."notes" FROM "Event_eve...
+                                                             ^
+
+"GET /api/event/ HTTP/1.1" 500 158373
+Forbidden: /api/contract/1/
+"GET /api/contract/1/ HTTP/1.1" 403 68
+Forbidden: /api/client/
+"GET /api/client/ HTTP/1.1" 403 68

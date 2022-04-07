@@ -7,8 +7,7 @@ from Event.models import Event
 class IsSupportAuthenticated(BasePermission):
 
 	def has_permission(self, request, view):
-		support_user = TeamUser.objects.filter(team="Support")
-		return request.user in support_user.all()
+		return request.user.team == "SUPPORT"
 
 	def has_object_permission(self, request, view, obj):
 		if type(obj) is Event:
@@ -23,8 +22,7 @@ class IsSupportAuthenticated(BasePermission):
 class IsSalesAuthenticated(BasePermission):
 
 	def has_permission(self, request, view):
-		support_user = TeamUser.objects.filter(team="Ventes")
-		return request.user in support_user.all()
+		return request.user.team == "SALES"
 
 	def has_object_permission(self, request, view, obj):
 		if type(obj) is Event:
@@ -42,8 +40,7 @@ class IsSalesAuthenticated(BasePermission):
 class IsManagementAuthenticated(BasePermission):
 
 	def has_permission(self, request, view):
-		return request.user.team == "Gestion"  # faire pareil pour tous et mettre Gestion en anglais
+		return request.user.team == "MANAGEMENT"
 
 	def has_object_permission(self, request, view, obj):
-		management_user = TeamUser.objects.filter(team="Gestion")
-		return request.user in management_user
+		return request.user.team == "MANAGEMENT"
