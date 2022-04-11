@@ -1400,3 +1400,19 @@ Forbidden: /api/contract/1/
 "GET /api/contract/1/ HTTP/1.1" 403 68
 Forbidden: /api/client/
 "GET /api/client/ HTTP/1.1" 403 68
+Not Found: /
+"GET / HTTP/1.1" 404 2546
+Not Found: /apple-touch-icon-precomposed.png
+"GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 2660
+Not Found: /apple-touch-icon.png
+"GET /apple-touch-icon.png HTTP/1.1" 404 2624
+Unauthorized: /api/client/
+"GET /api/client/ HTTP/1.1" 401 127
+Unauthorized: /api/client/
+"GET /api/client/ HTTP/1.1" 401 127
+Not Found: /api/contract/1/
+"GET /api/contract/1/ HTTP/1.1" 404 25
+Forbidden: /api/contract/3/
+"PUT /api/contract/3/ HTTP/1.1" 403 68
+Forbidden: /api/contract/3/
+"PUT /api/contract/3/ HTTP/1.1" 403 68

@@ -12,15 +12,15 @@ from rest_framework_simplejwt.views import (
 
 router = routers.SimpleRouter()
 
-router.register('teamuser', TeamUserViewset, basename='teamuser')
-router.register('client', ClientViewset, basename='client')
-router.register('event', EventViewset, basename='event')
-router.register('contract', ContractViewset, basename='contract')
+router.register("teamuser", TeamUserViewset, basename="teamuser")
+router.register("client", ClientViewset, basename="client")
+router.register("event", EventViewset, basename="event")
+router.register("contract", ContractViewset, basename="contract")
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('api-auth/', include('rest_framework.urls')),
-    path('api/', include(router.urls)),
-    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
-    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path("admin/", admin.site.urls),
+    path("api-auth/", include("rest_framework.urls")),
+    path("api/", include(router.urls)),
+    path("api/token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
+    path("api/token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
 ]
