@@ -83,7 +83,6 @@ You can install all the required paquets with:
 Run
 ---
 
-Go to the folder containing the project and use `python3 main.py runserver` then open Postman or another program of your choice and go to [http://127.0.0.1:8000/signup/](http://127.0.0.1:8000/signup/
-) to register. You can read [the postman documentation here](https://documenter.getpostman.com/view/19329986/UVeJJPpX) to see examples of all the URIs of the project.
+Go to the folder containing the project and use `python3 main.py runserver` then open Postman or another program and follow the  [documentation](https://documenter.getpostman.com/view/19329986/UVyyut4y) to see examples of all the URIs of the project.
 
 
